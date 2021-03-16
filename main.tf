@@ -8,6 +8,7 @@ terraform {
   }
 }
 //Not sure if this is the feature branch?
+//Just adding some more code for a test
 provider "azurerm" {
   features {}
 }
