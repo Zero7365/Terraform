@@ -8,14 +8,8 @@ terraform {
   }
 }
 
-#Changing tags to lowercase
-tags = {
-  environment = "Terraform Getting Started"
-  team = "DevOps"
-}
-
-//Not sure if this is the feature branch?
-//Just adding some more code for a test
+#Not sure if this is the feature branch?
+#Just adding some more code for a test
 provider "azurerm" {
   features {}
 }
@@ -28,6 +22,12 @@ resource "azurerm_resource_group" "rg1" {
 resource "azurerm_resource_group" "rg" {
   name     = "SecondTerraformResourceGroup"
   location = "West Europe"
+  
+  #Changing tags to lowercase
+  tags = {
+    environment = "Terraform Getting Started"
+    team = "DevOps"
+  }
 }
 
 resource "azurerm_resource_group" "rg3"{
