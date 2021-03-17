@@ -8,9 +8,10 @@ terraform {
   }
 }
 
-Tags = {
-  Environment = "Terraform Getting Started"
-  Team = "DevOps"
+#Changing tags to lowercase
+tags = {
+  environment = "Terraform Getting Started"
+  team = "DevOps"
 }
 
 //Not sure if this is the feature branch?
