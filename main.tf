@@ -17,18 +17,18 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg1" {
   name     = "FirstTerraformResourceGroup"
   location = "West Europe"
-  
-  #Changing tags to lowercase
-  tags = {
-    environment = "Terraform Getting Started"
-    team = "DevOps"
-  }
 }
 
 resource "azurerm_resource_group" "rg" {
   name     = "SecondTerraformResourceGroup"
   location = "West Europe"
-}
+
+  #Changing tags to lowercase
+  tags = {
+    environment = "Terraform Getting Started"
+    team = "DevOps"
+    }
+  }
 
 resource "azurerm_resource_group" "rg3"{
  name = "ThirdTerraformResourceGroup"
