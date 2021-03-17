@@ -7,6 +7,12 @@ terraform {
     }
   }
 }
+
+Tags = {
+  Environment = "Terraform Getting Started"
+  Team = "DevOps"
+}
+
 //Not sure if this is the feature branch?
 //Just adding some more code for a test
 provider "azurerm" {
